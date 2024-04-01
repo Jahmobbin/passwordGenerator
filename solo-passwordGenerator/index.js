@@ -9,16 +9,12 @@ function getRandomLetter(){
     randomLetter=Math.floor(Math.random()*characters.length)
     return characters[randomLetter]
 }
-
 function getGeneratedPassword(){
     let generatedPassword = ""
     for (i = 0; i < numberLength; i++ ){
         generatedPassword += getRandomLetter()
     }
-    return  randomPasswordOne.textContent=generatedPassword
-    
-    
-        
+    return  randomPasswordOne.textContent=generatedPassword      
 }
 
 function getGeneratedPasswordTwo(){
@@ -26,8 +22,7 @@ function getGeneratedPasswordTwo(){
     for (i = 0; i < numberLength; i++ ){
         generatedPassword += getRandomLetter()
     }
-    return  randomPasswordTwo.textContent=generatedPassword
-        
+    return  randomPasswordTwo.textContent=generatedPassword      
 }
 
 
